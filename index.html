@@ -1,0 +1,189 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGRINDZ - Polynesian Food in Hilo</title>
+    <!-- Google Fonts - Montserrat for a minimalist look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Montserrat font and neon yellow accent */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Changed font to Montserrat */
+            background-color: #000000; /* Pure black background */
+            color: #e0e0e0; /* Light grey text for contrast */
+        }
+        .neon-yellow-text {
+            color: #FFEA00; /* Bright yellow */
+        }
+        .neon-yellow-border {
+            border-color: #FFEA00;
+        }
+        .neon-yellow-bg-hover:hover {
+            background-color: #FFEA00;
+            color: #000000; /* Dark text on hover */
+        }
+        .section-padding {
+            padding: 4rem 1.5rem; /* Consistent padding for sections */
+        }
+        /* Custom scrollbar for a dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111111; /* Darker track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFEA00; /* Yellow thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e0d100; /* Slightly darker yellow on hover */
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Banner Section - Using JGRINDZ.jpg as the banner -->
+    <section class="w-full bg-black py-4 md:py-6 lg:py-8 text-center">
+        <div class="container mx-auto px-4">
+            <!-- The provided JGRINDZ.jpg image will be the banner -->
+            <!-- Ensure the image path is correct when deployed -->
+            <img src="JGRINDZ.jpg" onerror="this.onerror=null;this.src='https://placehold.co/1200x300/000000/FFEA00?text=JGRINDZ+Banner';" alt="JGRINDZ Banner" class="w-full h-auto max-h-96 object-contain rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <!-- Navigation Section - Placed below the banner -->
+    <nav class="bg-black py-4 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-center space-x-6 px-4">
+            <ul class="flex flex-wrap justify-center space-x-6">
+                <li><a href="#about" class="text-lg font-medium neon-yellow-text hover:underline">About</a></li>
+                <li><a href="#menu" class="text-lg font-medium neon-yellow-text hover:underline">Menu</a></li>
+                <li><a href="#contact" class="text-lg font-medium neon-yellow-text hover:underline">Order/Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-[#111111]">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 neon-yellow-text">About JGRINDZ</h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed">
+                <p class="mb-4">Welcome to JGRINDZ, your go-to spot for authentic Polynesian cuisine in the heart of Hilo. Founded by Jeffrey Silva, our mission is to bring the rich, vibrant flavors of the Pacific Islands to your plate, using traditional recipes and the freshest local ingredients.</p>
+                <p class="mb-4">From savory kalua pig to refreshing poke bowls and sweet haupia, every dish is prepared with aloha and a deep respect for our heritage. We believe food is more than just sustenance; it's a celebration of culture, family, and community. Come and experience a true taste of the islands with us!</p>
+                <p>We are committed to providing a memorable dining experience that transports you straight to the shores of Polynesia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section-padding bg-[#0a0a0a]">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 neon-yellow-text">Our Menu</h2>
+            <p class="text-lg text-gray-300 mb-8">All items available as individual plates. Pan sizes and prices are also listed where available.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item 1: Laulau Plate (Pan first) -->
+                <div class="bg-[#111111] p-6 rounded-lg shadow-xl border-2 neon-yellow-border transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 neon-yellow-text">Laulau Plate</h3>
+                    <p class="text-gray-300 mb-4">Traditional Hawaiian dish of pork and butterfish wrapped in taro leaves, steamed to perfection.</p>
+                    <span class="text-xl font-bold neon-yellow-text">$15.00</span>
+                    <p class="text-gray-400 mt-2">Pan (6 pieces): <span class="font-bold neon-yellow-text">$40.00</span></p>
+                </div>
+                <!-- Menu Item 2: Thai Coconut Curry Plate (Pan first) -->
+                <div class="bg-[#111111] p-6 rounded-lg shadow-xl border-2 neon-yellow-border transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 neon-yellow-text">Thai Coconut Curry Plate</h3>
+                    <p class="text-gray-300 mb-4">Rich and aromatic coconut curry served with your choice of saffron or white rice.</p>
+                    <span class="text-xl font-bold neon-yellow-text">$15.00</span>
+                    <p class="text-gray-400 mt-2">Pan: <span class="font-bold neon-yellow-text">$40.00</span></p>
+                </div>
+                <!-- Menu Item 3: Fried Chicken Plate (Pan first) -->
+                <div class="bg-[#111111] p-6 rounded-lg shadow-xl border-2 neon-yellow-border transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 neon-yellow-text">Fried Chicken Plate</h3>
+                    <p class="text-gray-300 mb-4">Crispy fried chicken served with two scoops of rice and a side of creamy mac n cheese.</p>
+                    <span class="text-xl font-bold neon-yellow-text">$15.00</span>
+                    <p class="text-gray-400 mt-2">Pan (20 pieces): <span class="font-bold neon-yellow-text">$45.00</span></p>
+                </div>
+                <!-- Menu Item 4: Loco Moco Plate -->
+                <div class="bg-[#111111] p-6 rounded-lg shadow-xl border-2 neon-yellow-border transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 neon-yellow-text">Loco Moco Plate</h3>
+                    <p class="text-gray-300 mb-4">Classic Hawaiian comfort food: rice topped with a hamburger patty, fried egg, and brown gravy.</p>
+                    <span class="text-xl font-bold neon-yellow-text">$15.00</span>
+                </div>
+                <!-- Menu Item 5: Cream of Mushroom Chicken Plate -->
+                <div class="bg-[#111111] p-6 rounded-lg shadow-xl border-2 neon-yellow-border transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 neon-yellow-text">Cream of Mushroom Chicken Plate</h3>
+                    <p class="text-gray-300 mb-4">Tender chicken smothered in a creamy mushroom sauce, served with rice.</p>
+                    <span class="text-xl font-bold neon-yellow-text">$10.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Order Section -->
+    <section id="contact" class="section-padding bg-[#111111]">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 neon-yellow-text">Order & Contact</h2>
+            <div class="max-w-2xl mx-auto text-lg leading-relaxed mb-12">
+                <p class="mb-2">Ready to place an order for your next event or gathering? Fill out the form below!</p>
+                <p class="mb-2">For general inquiries, you can reach us here:</p>
+                <p class="mb-2"><strong>Email:</strong> <span class="neon-yellow-text">[Your Email Here]</span></p>
+                <p class="mb-2"><strong>Phone:</strong> <span class="neon-yellow-text">[Your Phone Number Here]</span></p>
+                <p><strong>Location:</strong> Hilo, Hawaii (Specific address to be provided soon!)</p>
+            </div>
+
+            <!-- Formspree Form Integration for Orders -->
+            <h3 class="text-3xl font-semibold mb-6 neon-yellow-text">Place Your Tray Order</h3>
+            <div class="max-w-xl mx-auto bg-[#0a0a0a] p-8 rounded-lg shadow-xl border-2 neon-yellow-border">
+                <!-- IMPORTANT: Replace "YOUR_FORMSPREE_FORM_ID" with your actual Formspree form ID -->
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-left text-gray-300 text-sm font-bold mb-2">Your Name:</label>
+                        <input type="text" id="name" name="name" required
+                               class="shadow appearance-none border rounded-lg w-full py-3 px-4 bg-[#222222] text-gray-100 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-neon-yellow-text border-gray-600">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left text-gray-300 text-sm font-bold mb-2">Your Email:</label>
+                        <input type="email" id="email" name="email" required
+                               class="shadow appearance-none border rounded-lg w-full py-3 px-4 bg-[#222222] text-gray-100 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-neon-yellow-text border-gray-600">
+                    </div>
+                    <div>
+                        <label for="order_details" class="block text-left text-gray-300 text-sm font-bold mb-2">Tray Order Details (e.g., "2 trays Laulau, 1 pan Fried Chicken"):</label>
+                        <textarea id="order_details" name="order_details" rows="7" required
+                                  class="shadow appearance-none border rounded-lg w-full py-3 px-4 bg-[#222222] text-gray-100 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-neon-yellow-text border-gray-600"
+                                  placeholder="Please list the trays you'd like to order, including quantities."></textarea>
+                    </div>
+                    <button type="submit"
+                            class="w-full bg-black text-neon-yellow-text font-bold py-3 px-6 rounded-lg border-2 neon-yellow-border transition duration-300 ease-in-out neon-yellow-bg-hover shadow-lg transform hover:scale-105">
+                        Place Order
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 text-center text-gray-400">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 JGRINDZ. All rights reserved. Crafted with Aloha.</p>
+            <p class="mt-2 text-sm">Designed by Jeffrey Silva</p>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
